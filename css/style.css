@@ -96,27 +96,32 @@ p {
 }
 
 .feature {
-	text-align: center;
-	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.appify {
-	width: 31%;
-	float:left;
-}
-
-.sunflower {
-	width: 31%;
-}
-
-.bokeh {
-	width: 31%;
-	float: right;
+.col {
+	flex: 1;
 }
 
 .image {
-	width: 100%;
+	width: 90%;
 	box-shadow: 0 0 100px 5px #ddd;
+}
+
+.link-account {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fa {
+	color: #000;
+	margin-left: 50px;
+	padding-bottom: 50px;
+}
+
+.fa:hover {
+	color: #ff0000;
 }
 
 @media only screen and (min-width: 1700px) {
@@ -180,23 +185,6 @@ p {
 		text-align: center;
 	}
 
-	.appify {
-		width: 80%;
-		float: none;
-		margin-bottom: 30px;
-	}
-
-	.sunflower {
-		width: 80%;
-		float: none;
-		margin-bottom: 30px;
-	}
-
-	.bokeh {
-		width: 80%;
-		float: none;
-	}
-
 	.feature-p {
 		font-size: 23px;
 	}
@@ -213,5 +201,18 @@ p {
 
 	.title {
 		font-size: 10px;
+	}
+	
+	.feature {
+		display: block;
+	}
+
+	.col {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	.link-account {
+		display: block;
 	}
 }
